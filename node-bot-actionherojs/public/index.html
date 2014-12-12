@@ -1,0 +1,91 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-language" content="en" />
+  <link rel="icon" href="/public/favicon.ico">
+  <title>Node-Bot</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+  <script src="/public/javascript/actionheroClient.js"></script>
+
+  <style type="text/css">
+    .velocityContainer {
+      width: 100px;
+    }
+    .velocityContainer.left {
+      float: left;
+    }
+    .velocityContainer.right {
+      margin-left:100px;
+    }
+    .velocityValue {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="body_container">
+
+    <h1>Node-Bot</h1>      
+    <h3>[with actionherojs]</h3>
+
+    <div class="velocityContainer left">
+      <div class="velocityValue" data-velocity="0"></div>
+      <div class="velocityLabel">0</div>        
+      <div class="velocitySlider"></div>
+    </div>
+
+    <div class="velocityContainer right">
+      <div class="velocityValue" data-velocity="0"></div>
+      <div class="velocityLabel">0</div>        
+      <div class="velocitySlider"></div>
+    </div>
+
+    <div style="clear:both;"></div>
+
+  </div>
+
+  <script type="text/javascript">
+
+    function onVelocityChange(vLeft, vRight) {
+
+      // TODO: Keep track of whether we currently have a connection open. If so, queue this up. No need to queue up more than one of these.
+
+      var client = new ActionheroClient();
+      client.action('robotMovement', {velocityLeft: vLeft, velocityRight: vRight}, function(err, data){
+      });
+    }
+
+    $(document).ready(function(){
+
+      // Set up the sliders
+      $('.velocitySlider').slider({
+        orientation: 'vertical',
+        min: -100,
+        max: 100,
+        value: 0,
+        slide: function(event, ui){
+          // Set the value into the data-velocity attribute of the element
+          $(this).siblings('.velocityValue').data('velocity', ui.value);
+
+          // Trigger the onVelocityChange event
+          var vLeft = $('.velocityContainer.left .velocityValue').data('velocity');
+          var vRight = $('.velocityContainer.right .velocityValue').data('velocity');
+          onVelocityChange(vLeft, vRight);
+
+          // Update the labels
+          $('.velocityLabel').each(function(index){
+            $(this).html($(this).siblings('.velocityValue').data('velocity'));
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
