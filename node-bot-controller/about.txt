@@ -1,0 +1,3 @@
+This c++ application does the following:
+1. Controls robot state and manages GPIO.
+2. Listens for commands on a socket.

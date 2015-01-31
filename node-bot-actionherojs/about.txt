@@ -1,0 +1,6 @@
+This nodejs application does the following:
+1. Serves a single web page that contains web controls for
+   controlling the robot.
+2. Serves an API, which is used by the web page, for commands for the robot.
+3. During the command, opens a socket connection to the robot and sends command
+   to that application.

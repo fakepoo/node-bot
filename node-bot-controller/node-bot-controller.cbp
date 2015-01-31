@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="node-bot-controller" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/node-bot-controller" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/node-bot-controller" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Command.h" />
+		<Unit filename="include/CommandListener.h" />
+		<Unit filename="include/ConsoleRobot.h" />
+		<Unit filename="include/IDataListener.h" />
+		<Unit filename="include/IRobot.h" />
+		<Unit filename="include/Motor.h" />
+		<Unit filename="include/Robot.h" />
+		<Unit filename="include/Socket.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Command.cpp" />
+		<Unit filename="src/CommandListener.cpp" />
+		<Unit filename="src/ConsoleRobot.cpp" />
+		<Unit filename="src/Motor.cpp" />
+		<Unit filename="src/Robot.cpp" />
+		<Unit filename="src/Socket.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

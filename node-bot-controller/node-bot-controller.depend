@@ -1,0 +1,166 @@
+# depslib dependency file v1.0
+1419457631 source:/home/thomas-kendall/Projects/node-bot/node-bot-controller/main.cpp
+	<iostream>
+	<sstream>
+	<unistd.h>
+	"Robot.h"
+	"CommandListener.h"
+
+1418616322 source:/home/thomas-kendall/Projects/node-bot/node-bot-controller/src/Motor.cpp
+	"Motor.h"
+
+1419039045 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/Motor.h
+
+1418622018 source:/home/thomas-kendall/Projects/node-bot/node-bot-controller/src/Robot.cpp
+	"Robot.h"
+	<iostream>
+
+1419039206 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/Robot.h
+	"IRobot.h"
+	"Motor.h"
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/document.h
+	"reader.h"
+	"internal/meta.h"
+	"internal/strfunc.h"
+	<new>
+	<string>
+	<iterator>
+	<utility>
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/reader.h
+	"rapidjson.h"
+	"encodings.h"
+	"internal/meta.h"
+	"internal/stack.h"
+	"internal/strtod.h"
+	<intrin.h>
+	<nmmintrin.h>
+	<emmintrin.h>
+	<stdexcept>
+	"rapidjson/error/error.h"
+	"rapidjson/reader.h"
+	"error/error.h"
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/rapidjson.h
+	<cstdlib>
+	<cstring>
+	"rapidjson/..."
+	"msinttypes/stdint.h"
+	"msinttypes/inttypes.h"
+	<stdint.h>
+	<inttypes.h>
+	<endian.h>
+	"rapidjson/..."
+	<cassert>
+	"allocators.h"
+	"encodings.h"
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/msinttypes/stdint.h
+	<stdint.h>
+	<limits.h>
+	<wchar.h>
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/msinttypes/inttypes.h
+	"stdint.h"
+	<inttypes.h>
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/allocators.h
+	"rapidjson.h"
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/encodings.h
+	"rapidjson.h"
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/meta.h
+	<type_traits>
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/stack.h
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/strtod.h
+	"../rapidjson.h"
+	"ieee754.h"
+	"biginteger.h"
+	"diyfp.h"
+	"pow10.h"
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/ieee754.h
+	"../rapidjson.h"
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/biginteger.h
+	"../rapidjson.h"
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/diyfp.h
+	<intrin.h>
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/pow10.h
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/error/error.h
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/strfunc.h
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/writer.h
+	"rapidjson.h"
+	"internal/stack.h"
+	"internal/strfunc.h"
+	"internal/dtoa.h"
+	"internal/itoa.h"
+	"stringbuffer.h"
+	<new>
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/dtoa.h
+	"itoa.h"
+	"diyfp.h"
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/internal/itoa.h
+
+1418621557 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/rapidjson/stringbuffer.h
+	"rapidjson.h"
+	<utility>
+	"internal/stack.h"
+
+1419455723 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/CommandListener.h
+	<queue>
+	"IDataListener.h"
+	"Command.h"
+
+1419455822 source:/home/thomas-kendall/Projects/node-bot/node-bot-controller/src/CommandListener.cpp
+	"CommandListener.h"
+	<iostream>
+	"Socket.h"
+
+1419046264 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/Socket.h
+	<pthread.h>
+	<vector>
+	"IDataListener.h"
+
+1419457772 source:/home/thomas-kendall/Projects/node-bot/node-bot-controller/src/Socket.cpp
+	"Socket.h"
+	<stdio.h>
+	<string.h>
+	<netdb.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<unistd.h>
+	<cerrno>
+	<iostream>
+
+1419039161 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/IRobot.h
+
+1419039406 source:/home/thomas-kendall/Projects/node-bot/node-bot-controller/src/ConsoleRobot.cpp
+	"ConsoleRobot.h"
+	<iostream>
+
+1419039331 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/ConsoleRobot.h
+	"IRobot.h"
+
+1419041351 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/IDataListener.h
+
+1419050734 source:/home/thomas-kendall/Projects/node-bot/node-bot-controller/src/Command.cpp
+	"Command.h"
+	<iostream>
+
+1419047864 /home/thomas-kendall/Projects/node-bot/node-bot-controller/include/Command.h
+	<string>
+	<vector>
+
